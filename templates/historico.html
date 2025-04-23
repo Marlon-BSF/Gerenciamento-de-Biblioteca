@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Histórico</title></head>
+<body>
+    <h2>Histórico de Empréstimos</h2>
+    <ul>
+        {% for h in historico %}
+            <li>{{ h[1] }} | Retirado: {{ h[2] }} | Prazo: {{ h[3] }} | Devolvido: {{ h[4] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/biblioteca"><button>Voltar</button></a>
+</body>
+</html>
